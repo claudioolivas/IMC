@@ -32,6 +32,33 @@ function  calculoIMC(){
         document.getElementById("estado").value="Delgadez moderada";
 
       }
+      if(imc>17&&imc<=18.49){
+        document.getElementById("estado").value="Delgadez aceptable";
+
+      }
+      if(imc>18.50&&imc<=24.99){
+        document.getElementById("estado").value="sobrepeso";
+
+      }
+      if(imc>25&&imc<=29,99){
+        document.getElementById("estado").value="Delgadez moderada";
+
+      }
+      if(imc>30&&imc<=34,00){
+        document.getElementById("estado").value="Obeso : Tipo 1";
+
+      }
+      if(imc>35&&imc<=40.00){
+        document.getElementById("estado").value="Obeso : Tipo 2";
+
+      }
+      if(imc>40,00){
+        document.getElementById("estado").value="Obeso : Tipo 3";
+
+      }
+      document.getElementById("error_form").innerHTML=""; 
+      document.getElementById("peso").innerHTML="";
+      document.getElementById("altura").innerHTML="";
      
  }
 
@@ -52,4 +79,5 @@ function valida(e){
 function limpiar(){
      
     document.getElementById("error_form").innerHTML="";
+
 }
